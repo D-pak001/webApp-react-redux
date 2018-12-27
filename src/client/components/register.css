@@ -1,0 +1,151 @@
+input[type=number],input[type=tel],input[type=email],input[type=text], input[type=password] {
+    width: 80%;
+    /* padding: 15px; */
+   
+    /* padding-right: 28px; */
+    padding: 15px 28px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    
+    outline: none;
+}
+.login-wrapper {
+   padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); 
+    /* background-color: #f44336; */
+}
+#login {
+    
+    padding: 40px;
+}
+.line {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.line > span {
+    position: relative;
+    display: inline-block;
+}
+
+.line > span:before,
+.line > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    /* Here is the modification */
+    border-top: 1px solid black;
+}
+
+.line > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.line > span:after {
+    left: 100%;
+    margin-left:15px;
+}
+
+.button {
+    background-color: rgb(148, 124, 231);
+    /* color: white; */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    display: inline-block;
+    /* transition: all 0.5s; */
+}
+.googleBtn {
+    margin-left: 25px;
+    width: 80%;
+}
+ .loginBtn {
+    color:white;
+    font-size: 15px;
+    width: 35%;
+
+} 
+.loginBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.loginBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.loginBtn:hover span {
+    padding-right: 25px;
+  }
+  
+.loginBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover {
+    opacity:1;
+} 
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn, .submitBtn {
+    float: left;
+    width: 48%;
+  }
+
+.register-wrapper {
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); 
+    
+}  
+.reg-app {
+    /* position: absolute; */
+    margin-top: 40px;
+    margin-left:0;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-sizing: content-box;
+    width: 435px;
+    min-height: 200px;
+    /* float: left; */
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    
+
+}  
+#register {
+    padding: 40px;
+}
